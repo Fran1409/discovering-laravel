@@ -73,6 +73,7 @@
     </div>
     <div class="row">
         <form method="post" action="/cocktails">
+            @csrf
             <fieldset>
                 <legend>Order here</legend>
 
