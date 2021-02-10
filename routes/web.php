@@ -20,10 +20,10 @@ Route::get('/', function() {
 Route::get('/cocktails', 'App\Http\Controllers\CocktailsController@show');
 
 Route::get('/about', function() {
-    return view('cocktails');
+    return view('about');
 });
 
 Route::get('/contact', function() {
-    return view('cocktails');
+    return view('contact');
 });
 
