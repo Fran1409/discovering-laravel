@@ -35,6 +35,24 @@ body {
     -webkit-box-flex: 1;
     flex: 1;
 }
+.cocktails {
+    background-image: url( '../images/marble.jpg' );
+    background-size: auto;
+}
+.row {
+    max-width: 960px;
+    margin-left: 300px;
+}
+.card {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    align-items: center;
+    height: 520px;
+}
+.card-img-top {
+    height: 300px;
+    width: auto;
+}
 @media (min-width: 768px) {
     .flex-md-equal > * {
         -ms-flex: 1;

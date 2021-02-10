@@ -17,9 +17,7 @@ Route::get('/', function() {
     return view('welcome');
 });
 
-Route::get('/cocktails', function() {
-    return view('cocktails');
-});
+Route::get('/cocktails', 'App\Http\Controllers\CocktailsController@show');
 
 Route::get('/about', function() {
     return view('cocktails');
