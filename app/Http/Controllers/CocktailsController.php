@@ -11,8 +11,16 @@ class CocktailsController extends Controller
         return view('cocktails');
     }
 
-    public function store()
+    public function store(Request $request)
     {
-        die('hello');
+        //dump(request()->all());
+
+        $email = request('email');
+        $adress = request('street');
+        $zipcode = request('zipcode');
+        $city = request('city');
+        $products = request('cocktails;');
+    
+        return redirect('/orderConfirmation');
     }
 }

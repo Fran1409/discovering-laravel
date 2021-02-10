@@ -38,14 +38,15 @@ body {
 .box {
     background-image: url( '../images/marble.jpg' );
     background-size: auto;
+    min-height: 600px;
 }
 .row {
     max-width: 960px;
     margin-left: 300px;
+    padding-top: 25px;
     padding-bottom: 25px;
 }
 .card {
-    margin-top: 25px;
     margin-bottom: 25px;
     align-items: center;
     height: 520px;
