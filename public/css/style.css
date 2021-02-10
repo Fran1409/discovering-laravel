@@ -42,6 +42,7 @@ body {
 .row {
     max-width: 960px;
     margin-left: 300px;
+    padding-bottom: 25px;
 }
 .card {
     margin-top: 25px;
@@ -52,6 +53,9 @@ body {
 .card-img-top {
     height: 300px;
     width: auto;
+}
+form {
+    margin-left: 250px;
 }
 @media (min-width: 768px) {
     .flex-md-equal > * {

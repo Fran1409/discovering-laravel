@@ -56,7 +56,7 @@
             <div class="card" style="width: 18rem;">
                 <img class="card-img-top" src="../images/margarita.jpg" alt="Card image cap">
                 <div class="card-body">
-                <h5 class="card-title">Margarita - €12</h5>
+                <h5 class="card-title">Margarita - €11</h5>
                 <p class="card-text">A margarita is a cocktail consisting of tequila, orange liqueur, and lime juice often served with salt on the rim of the glass.</p>
                 </div>
             </div>
@@ -70,6 +70,55 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="row">
+        <form method="post" action="/cocktails">
+            <fieldset>
+                <legend>Order here</legend>
+
+                <div class="form-row">
+                    <div class="form-group col-lg">
+                        <label for="email">E-mail:</label>
+                        <input type="text" id="email" name="email" class="form-control" >
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md">
+                        <label for="street">Street + streetnumber:</label>
+                        <input type="text" name="street" id="street" class="form-control">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md">
+                        <label for="zipcode">Zipcode:</label>
+                        <input type="text" id="zipcode" name="zipcode" class="form-control">
+                    </div>
+                    <div class="form-group col-md">
+                        <label for="city">City:</label>
+                        <input type="text" id="city" name="city" class="form-control">
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Products</legend>
+                <div class="form-row">
+                    <div class="form-group col-lg">
+                        <select multiple id="cocktails" name="cocktails" class="form-control" >
+                            <option value="cosmopolitan">Cosmopolitan - €11</option>
+                            <option value="cosmopolitan">Lazy Red Cheeks - €10</option>
+                            <option value="cosmopolitan">Pornstar Martini - €12</option>
+                            <option value="cosmopolitan">Long Island Iced Tea - €12</option>
+                            <option value="cosmopolitan">Margarita - €11</option>
+                            <option value="cosmopolitan">Bart - €10</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+
+            <button type="submit" class="btn btn-secondary" name="submit">Order!</button>
+        </form>
     </div>
 </div>
 @endsection

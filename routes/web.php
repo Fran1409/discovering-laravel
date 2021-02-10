@@ -19,6 +19,8 @@ Route::get('/', function() {
 
 Route::get('/cocktails', 'App\Http\Controllers\CocktailsController@show');
 
+Route::post('/cocktails', 'App\Http\Controllers\CocktailsController@store');
+
 Route::get('/about', function() {
     return view('about');
 });

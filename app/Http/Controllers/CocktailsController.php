@@ -10,4 +10,9 @@ class CocktailsController extends Controller
     {
         return view('cocktails');
     }
+
+    public function store()
+    {
+        die('hello');
+    }
 }
