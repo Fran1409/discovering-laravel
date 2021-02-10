@@ -12,7 +12,7 @@
 @endsection
 
 @section('content')
-<div class="cocktails">
+<div class="box">
     <div class="row">
         <div class="col-sm">
             <div class="card" style="width: 18rem;">

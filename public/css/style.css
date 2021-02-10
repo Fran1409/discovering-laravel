@@ -35,7 +35,7 @@ body {
     -webkit-box-flex: 1;
     flex: 1;
 }
-.cocktails {
+.box {
     background-image: url( '../images/marble.jpg' );
     background-size: auto;
 }
