@@ -110,16 +110,16 @@
                 <legend>Fill in which cocktail(s)</legend>
                 <div class="form-row">
                     <div class="form-group col-lg">
-                        <input type="text" id="cocktails" name="cocktails" class="form-control" value="{{ old('cocktails')}}">
-
-                        {{-- <select multiple id="cocktails" name="cocktails" class="form-control">
+{{--                         <input type="text" id="cocktails" name="cocktails" class="form-control" value="{{ old('cocktails')}}">
+ --}}
+                        <select multiple id="cocktails" name="cocktails" class="form-control">
                             <option value="cosmopolitan">Cosmopolitan - €11</option>
-                            <option value="cosmopolitan">Lazy Red Cheeks - €10</option>
-                            <option value="cosmopolitan">Pornstar Martini - €12</option>
-                            <option value="cosmopolitan">Long Island Iced Tea - €12</option>
-                            <option value="cosmopolitan">Margarita - €11</option>
-                            <option value="cosmopolitan">Bart - €10</option>
-                        </select> --}}
+                            <option value="lazyredcheeks">Lazy Red Cheeks - €10</option>
+                            <option value="pornstarmartini">Pornstar Martini - €12</option>
+                            <option value="longislandicedtea">Long Island Iced Tea - €12</option>
+                            <option value="margarita">Margarita - €11</option>
+                            <option value="bart">Bart - €10</option>
+                        </select>
                         @error('cocktails')
                             <p class="text-danger">{{$errors->first('cocktails') }}</p>
                         @enderror
