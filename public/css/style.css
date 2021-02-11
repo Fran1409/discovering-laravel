@@ -46,6 +46,13 @@ body {
     padding-top: 25px;
     padding-bottom: 25px;
 }
+.row-order {
+    max-width: 960px;
+    margin-left: 300px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+}
 .card {
     margin-bottom: 25px;
     align-items: center;
