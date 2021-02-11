@@ -74,7 +74,7 @@
                         <label for="email">E-mail:</label>
                         <input type="text" id="email" name="email" class="form-control" value="{{ old('email')}}">
                         @error('email')
-                            <p class="help">{{$errors->first('email') }}</p>
+                            <p class="text-danger">{{$errors->first('email') }}</p>
                         @enderror
                     </div>
                 </div>
@@ -84,7 +84,7 @@
                         <label for="street">Street + streetnumber:</label>
                         <input type="text" name="street" id="street" class="form-control" value="{{ old('street')}}">
                         @error('street')
-                            <p class="help">{{$errors->first('street') }}</p>
+                            <p class="text-danger">{{$errors->first('street') }}</p>
                         @enderror
                     </div>
                 </div>
@@ -93,33 +93,35 @@
                         <label for="zipcode">Zipcode:</label>
                         <input type="text" id="zipcode" name="zipcode" class="form-control" value="{{ old('zipcode')}}">
                         @error('zipcode')
-                            <p class="help">{{$errors->first('zipcode') }}</p>
+                            <p class="text-danger">{{$errors->first('zipcode') }}</p>
                         @enderror
                     </div>
                     <div class="form-group col-md">
                         <label for="city">City:</label>
                         <input type="text" id="city" name="city" class="form-control" value="{{ old('city')}}">
                         @error('city')
-                            <p class="help">{{$errors->first('city') }}</p>
+                            <p class="text-danger">{{$errors->first('city') }}</p>
                         @enderror
                     </div>
                 </div>
             </fieldset>
 
             <fieldset>
-                <legend>Products</legend>
+                <legend>Fill in which cocktail(s)</legend>
                 <div class="form-row">
                     <div class="form-group col-lg">
-                        <select multiple id="cocktails" name="cocktails" class="form-control">
+                        <input type="text" id="cocktails" name="cocktails" class="form-control" value="{{ old('cocktails')}}">
+
+                        {{-- <select multiple id="cocktails" name="cocktails" class="form-control">
                             <option value="cosmopolitan">Cosmopolitan - €11</option>
                             <option value="cosmopolitan">Lazy Red Cheeks - €10</option>
                             <option value="cosmopolitan">Pornstar Martini - €12</option>
                             <option value="cosmopolitan">Long Island Iced Tea - €12</option>
                             <option value="cosmopolitan">Margarita - €11</option>
                             <option value="cosmopolitan">Bart - €10</option>
-                        </select>
+                        </select> --}}
                         @error('cocktails')
-                            <p class="help">{{$errors->first('cocktails') }}</p>
+                            <p class="text-danger">{{$errors->first('cocktails') }}</p>
                         @enderror
                     </div>
                 </div>

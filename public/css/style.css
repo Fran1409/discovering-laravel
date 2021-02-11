@@ -65,9 +65,6 @@ body {
 form {
     margin-left: 250px;
 }
-p.help {
-    color: red;
-}
 @media (min-width: 768px) {
     .flex-md-equal > * {
         -ms-flex: 1;
