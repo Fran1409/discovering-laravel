@@ -15,7 +15,7 @@ class CreateCocktailsTable extends Migration
     {
         Schema::create('cocktails', function (Blueprint $table) {
             $table->id();
-            $table->string('email')->unique();
+            $table->string('email');
             $table->string('street');
             $table->string('zipcode');
             $table->string('city');

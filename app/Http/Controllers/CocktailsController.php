@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use DB;
+//use DB;
+use App\Models\Cocktail;
 
 class CocktailsController extends Controller
 {
@@ -34,7 +35,8 @@ class CocktailsController extends Controller
 
     public function insertDB(Request $request)
     {
-        DB::table('cocktails')->insert([
+        //DB::table('cocktails')->insert([
+        Cocktail::create([
             'email' => $request->email,
             'street' => $request->street,
             'zipcode' => $request->zipcode,
