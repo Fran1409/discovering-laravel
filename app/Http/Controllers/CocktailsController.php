@@ -16,16 +16,6 @@ class CocktailsController extends Controller
     public function store(Request $request)
     {
         //dump(request()->all());
-
-        request()->validate([
-            'email' => 'required',
-            'street' => 'required',
-            'zipcode' => 'required',
-            'city' => 'required',
-            'cocktails' => 'required'
-
-        ]);
-
         $email = request('email');
         $adress = request('street');
         $zipcode = request('zipcode');
@@ -35,6 +25,15 @@ class CocktailsController extends Controller
 
     public function insertDB(Request $request)
     {
+        request()->validate([
+            'email' => 'required|email:rfc,dns',
+            'street' => 'required',
+            'zipcode' => 'required',
+            'city' => 'required',
+            'cocktails' => 'required'
+
+        ]);
+
         //DB::table('cocktails')->insert([
         Cocktail::create([
             'email' => $request->email,
