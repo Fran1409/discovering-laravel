@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use DB;
 
 class CocktailsController extends Controller
 {
@@ -29,7 +30,19 @@ class CocktailsController extends Controller
         $zipcode = request('zipcode');
         $city = request('city');
         $products = request('cocktails;');
-    
+    }
+
+    public function insertDB(Request $request)
+    {
+        DB::table('cocktails')->insert([
+            'email' => $request->email,
+            'street' => $request->street,
+            'zipcode' => $request->zipcode,
+            'city' => $request->city,
+            'cocktails' => $request->cocktails,
+        ]);
+
         return redirect('/orderConfirmation');
+    
     }
 }
